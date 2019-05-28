@@ -1,15 +1,15 @@
 module.exports = (sequelize, DataTypes) => {
   const Book = sequelize.define('Book', {
     title: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(10),
       allowNull: false,
     },
     price: {
-      type: DataTypes.DECIMAL(15,2),
+      type: DataTypes.DECIMAL(10),
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(10),
       allowNull: false,
     },
   })
